@@ -1,0 +1,19 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /
+    
+spring:
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/COS?serverTimezone=Asia/Seoul
+    username: COS
+    password: BITC5600
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
